@@ -20,105 +20,91 @@
             background-color: #f4f4f4;
         }
         .resume {
-            display: flex;
             width: 800px;
             background: #fff;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .left {
-            width: 35%;
-            background: #5b0e0e;
-            color: #fff;
-            padding: 20px;
+        .header {
             text-align: center;
+            margin-bottom: 20px;
         }
-        .left img {
-            width: 100px;
-            height: 100px;
+        .header img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .left h2 {
-            font-size: 18px;
             margin-bottom: 10px;
         }
-        .left p {
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .left .contact, .left .achievements {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .left .contact p, .left .achievements ul {
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        .right {
-            width: 65%;
-            padding: 20px;
-        }
-        .right h1 {
+        .header h2 {
             font-size: 22px;
-            color: #5b0e0e;
+            color: #333;
         }
-        .right h3 {
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
             font-size: 18px;
-            margin-top: 15px;
+            color: #5b0e0e;
+            margin-bottom: 10px;
         }
-        .right p {
+        .section p, .section ul {
             font-size: 14px;
+            color: #444;
             line-height: 1.6;
         }
-        .right ul {
+        .section ul {
             padding-left: 20px;
-        }
-        .right ul li {
-            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="resume">
-        <div class="left">
+        <div class="header">
             <img src="profile.jpg" alt="Sayeed Jahin Abid Samin">
             <h2>SAYEED JAHIN ABID SAMIN</h2>
-            <p>CSE Undergraduate</p>
-            <p>Independent University, Bangladesh</p>
-
-            <div class="contact">
-                <h3>Contact</h3>
-                <p>📞 +880 1771 911141</p>
-                <p>✉️ sayeedjahinabidsamin@gmail.com</p>
-                <p>🔗 <a href="https://www.linkedin.com/in/sayeed-jahin-abid-533b902037" style="color: white;">LinkedIn</a></p>
-            </div>
-
-            <div class="achievements">
-                <h3>Achievements</h3>
-                <ul>
-                    <li>Champion in IEEE Soccer Bot competition.</li>
-                    <li>Worked on robotics projects.</li>
-                    <li>Joined many programming competitions.</li>
-                </ul>
-            </div>
+            <p>CSE Undergraduate, Independent University, Bangladesh</p>
         </div>
 
-        <div class="right">
-            <h1>About Me</h1>
-            <p>Passionate CSE student with programming expertise and a drive for innovation.</p>
+        <div class="section">
+            <h3>Contact</h3>
+            <p>📞 +880 1771 911141</p>
+            <p>✉️ sayeedjahinabidsamin@gmail.com</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/sayeed-jahin-abid-533b902037" target="_blank">LinkedIn</a></p>
+        </div>
 
+        <div class="section">
+            <h3>About Me</h3>
+            <p>Passionate CSE student with programming expertise and a drive for innovation.</p>
+        </div>
+
+        <div class="section">
             <h3>Career Objectives</h3>
             <p>
                 I am looking for a position where I can work with professional groups who offer opportunities for career 
                 advancement and professional growth. I aim to apply and enhance my knowledge to serve an organization 
                 to the best of my abilities.
             </p>
+        </div>
 
+        <div class="section">
             <h3>Education</h3>
             <ul>
                 <li><strong>SSC</strong> from <strong>Mymensingh Zilla School</strong> (GPA 4.95)</li>
                 <li><strong>HSC</strong> from <strong>Mymensingh Govt. College</strong> (GPA 5.00)</li>
                 <li>Currently studying at <strong>Independent University, Bangladesh</strong> in CSE (7th Semester)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Achievements</h3>
+            <ul>
+                <li>Champion in IEEE Soccer Bot competition.</li>
+                <li>Worked on robotics projects.</li>
+                <li>Joined many programming competitions.</li>
             </ul>
         </div>
     </div>
