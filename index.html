@@ -3,65 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>Resume - Sayeed Jahin Abid Samin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             background-color: #f4f4f4;
         }
-        .container {
-            max-width: 800px;
-            background: white;
+        .resume {
+            display: flex;
+            width: 800px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            width: 35%;
+            background: #5b0e0e;
+            color: #fff;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        h1, h2 {
-            color: #333;
+        .left img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact-info {
+        .left h2 {
+            font-size: 18px;
             margin-bottom: 10px;
+        }
+        .left p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .left .contact, .left .achievements {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .left .contact p, .left .achievements ul {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .right {
+            width: 65%;
+            padding: 20px;
+        }
+        .right h1 {
+            font-size: 22px;
+            color: #5b0e0e;
+        }
+        .right h3 {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        .right p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .right ul {
+            padding-left: 20px;
+        }
+        .right ul li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p class="contact-info">Email: your.email@example.com | Phone: +1234567890 | Location: Your City</p>
-        </header>
-        <section class="section">
-            <h2>Summary</h2>
-            <p>Brief description about yourself, your skills, and experience.</p>
-        </section>
-        <section class="section">
-            <h2>Education</h2>
-            <p><strong>Degree in Subject</strong> - University Name (Year)</p>
-        </section>
-        <section class="section">
-            <h2>Experience</h2>
-            <p><strong>Job Title</strong> - Company Name (Year - Year)</p>
+    <div class="resume">
+        <div class="left">
+            <img src="profile.jpg" alt="Sayeed Jahin Abid Samin">
+            <h2>SAYEED JAHIN ABID SAMIN</h2>
+            <p>CSE Undergraduate</p>
+            <p>Independent University, Bangladesh</p>
+
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>📞 +880 1771 911141</p>
+                <p>✉️ sayeedjahinabidsamin@gmail.com</p>
+                <p>🔗 <a href="https://www.linkedin.com/in/sayeed-jahin-abid-533b902037" style="color: white;">LinkedIn</a></p>
+            </div>
+
+            <div class="achievements">
+                <h3>Achievements</h3>
+                <ul>
+                    <li>Champion in IEEE Soccer Bot competition.</li>
+                    <li>Worked on robotics projects.</li>
+                    <li>Joined many programming competitions.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1>About Me</h1>
+            <p>Passionate CSE student with programming expertise and a drive for innovation.</p>
+
+            <h3>Career Objectives</h3>
+            <p>
+                I am looking for a position where I can work with professional groups who offer opportunities for career 
+                advancement and professional growth. I aim to apply and enhance my knowledge to serve an organization 
+                to the best of my abilities.
+            </p>
+
+            <h3>Education</h3>
             <ul>
-                <li>Responsibility 1</li>
-                <li>Responsibility 2</li>
+                <li><strong>SSC</strong> from <strong>Mymensingh Zilla School</strong> (GPA 4.95)</li>
+                <li><strong>HSC</strong> from <strong>Mymensingh Govt. College</strong> (GPA 5.00)</li>
+                <li>Currently studying at <strong>Independent University, Bangladesh</strong> in CSE (7th Semester)</li>
             </ul>
-        </section>
-        <section class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2>Projects</h2>
-            <p><strong>Project Name</strong> - Description of the project.</p>
-        </section>
+        </div>
     </div>
 </body>
 </html>
